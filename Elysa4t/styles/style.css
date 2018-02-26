@@ -22,13 +22,13 @@ li {
 	list-style: none;
 }
 header {
-	height: 190px;
+	height: 187px;
 	background: url("../images/header-wrapper-bg.png") left top;
 	box-sizing: border-box;
 
 }
 header .container {
-	line-height: 190px;
+	line-height: 187px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -39,8 +39,7 @@ header .container {
 .logo {
 	width: 212px;
 	height: 100px;
-/*	line-height: 100px;*/
-	background: url("../images/logo-bg.png");
+	background: url("../images/logo-bg.png") left top no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -56,14 +55,14 @@ header .container {
 .navigation-menu {
 	display: flex;
 	justify-content: space-between;
-	margin-right: 80px;
+	margin-right: 90px;
 }
 
 .navigation-menu a {
 	font-size: 1.2em;
 	color: #fff;
-	letter-spacing: -1px;
-	margin: 0 20px;
+	/*letter-spacing: -1px;*/
+	margin: 0 15px;
 	line-height: 30px;
 	text-decoration: none;
 	padding: 6px 15px;
@@ -131,7 +130,7 @@ section {
 	padding-top: 30px;
 	display: flex;
 	flex-direction: column;
-	margin-left: -26px;
+	margin-left: -20px;
 }
 
 section h2 {
@@ -141,6 +140,7 @@ section h2 {
 	font-family: "Arvo", serif;
 	letter-spacing: -2px;
 	font-weight: 400;
+
 }
 
 .post-info {
@@ -150,7 +150,7 @@ section h2 {
 	padding-left: 30px;
 }
 .post-info p {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: normal;
 	font-family: "Arvo", serif;
 	color: #fff;
@@ -172,8 +172,10 @@ section h2 {
 }
 .post-text p {
 	font-size: 1.1em;
-	letter-spacing: 1px;
-	line-height: 1.6;
+	line-height: 1.9;
+	letter-spacing: -0.5px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
 
 }
 .post-comments {
@@ -183,17 +185,31 @@ section h2 {
     border: 1px solid black;
     margin: 0 30px 30px;
     display: flex;
-    justify-content: space-around;
-    padding: px;
+    justify-content: space-between;
+    font-family: "Arvo", serif;
+    padding: 0 25px;   
 
 }
+.post-comments p {
+	color: #000;
+	font-size: 1.2em;	
+}
+.post-comments a {
+	color: #000;
+	font-size: 1.0em;
+	font-weight: normal;
+}
+
+.post-comments a:hover {
+	text-decoration: none;
+} 
 .aside-top {
 	background: url("../images/sidebar-bg-01.png") left top no-repeat;
 	height: 15px;
 }
 
 aside {
-	width: 295px;
+	width: 300px;
 	background: url("../images/sidebar-bg-02.png") repeat-y ;
 	
 }
@@ -219,7 +235,8 @@ aside {
 }
 
 .aside-text p {
-	color: #fff;
+	color: rgb(225, 201, 196);
+	text-shadow: rgb(57, 27, 22) 1px 1px 1px;
 	font-size: 1.1em;
 	padding: 0 50px 15px 27px;
 	line-height: 1.6;
@@ -246,7 +263,7 @@ aside {
  
 .widgets-block {
 	height: 276px;
-	background: url("../images/footer-content-bg-02.png");
+	background: url("../images/footer-content-bg-02.png") left top repeat-x;
 	box-sizing: border-box;
 	padding-top: 44px;
 	}
@@ -268,12 +285,17 @@ aside {
 }
 .widget h3 {
 	color: #fff;
-	text-align: center;
+	text-align: left;
 	font-family: "Arvo", serif;
+	font-weight: normal;
+	letter-spacing: 1px;
+
+
 }
 
 .widget p {
-	color: #fff;
+	color: rgb(225, 201, 196);
+	text-shadow: rgb(57, 27, 22) 1px 1px 1px;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	margin-top: 25px;
 	line-height: 1.9;
@@ -282,6 +304,17 @@ aside {
 
 footer {
 	height: 143px;
-	background: url('../images/footer-bg.png');
+	background: url('../images/footer-bg.png') left top repeat-x;
 	box-sizing: border-box;
+	text-align: center;
+	padding-top: 40px;
+	
 }
+ footer p,
+ footer a {
+ 	color: rgb(120, 79, 69);
+	text-shadow: rgb(39, 20, 17) 1px 1px 2px;
+ }
+ footer a:hover {
+ 	text-decoration: none;
+ }
