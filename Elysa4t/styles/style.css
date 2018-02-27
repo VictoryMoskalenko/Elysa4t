@@ -12,7 +12,6 @@ body {
 }
 
 .container {
-	width: `1000px;
 	max-width: 1000px;
 	margin: 0 auto;
 	border: 1px solid black;
@@ -27,8 +26,8 @@ header {
 	box-sizing: border-box;
 
 }
-header .container {
-	line-height: 187px;
+.header-block {
+	height: 187px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -61,7 +60,6 @@ header .container {
 .navigation-menu a {
 	font-size: 1.2em;
 	color: #fff;
-	/*letter-spacing: -1px;*/
 	margin: 0 15px;
 	line-height: 30px;
 	text-decoration: none;
@@ -76,9 +74,8 @@ header .container {
 }
 
 .presentation-banner {
-	height: 340px;
+	min-height: 340px;
 	background: url("../images/banner-wrapper-bg.png");
-	box-sizing: border-box;
 	padding-top: 30px;
 }
 
@@ -109,6 +106,7 @@ header .container {
 	font-size: 1.6em;
 	font-weight: normal;
 	letter-spacing: 1.2px;
+	white-space: normal;
 }
 
 .main-block {
@@ -131,6 +129,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	margin-left: -20px;
+	border: 1px solid black;
 }
 
 section h2 {
@@ -210,7 +209,8 @@ section h2 {
 
 aside {
 	width: 300px;
-	background: url("../images/sidebar-bg-02.png") repeat-y ;
+	background: url("../images/sidebar-bg-02.png") repeat-y;
+	border: 1px solid black;
 	
 }
 .aside-info {
@@ -262,7 +262,8 @@ aside {
 }
  
 .widgets-block {
-	height: 276px;
+	min-height: 276px;
+	height: auto;
 	background: url("../images/footer-content-bg-02.png") left top repeat-x;
 	box-sizing: border-box;
 	padding-top: 44px;
@@ -278,7 +279,7 @@ aside {
 .widget {
 	box-sizing: border-box;
 	width: 30%;
-	height: 198px;
+	min-height: 198px;
 	background: url('../images/box-widget-bg-02.png');
 	padding: 30px;
 	
@@ -318,3 +319,4 @@ footer {
  footer a:hover {
  	text-decoration: none;
  }
+
