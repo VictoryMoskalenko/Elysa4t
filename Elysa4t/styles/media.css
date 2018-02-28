@@ -11,13 +11,25 @@
 	.navigation-menu a {
 		margin: 0;
 	}
-	.presentation-banner img{
-		width: 100%;
-		margin: 0 auto;
+	.banner-block {
+		width: 98%;
+
 	}
+	.banner-image img{
+		width: 100%;
+		/*margin: 0 auto;	*/
+	}
+	
+	.banner-text {
+		font-size: 1.3em;
+		letter-spacing: 2px;
+		font-weight: normal;
+	}
+
 	.main-block .container {
 		flex-direction: column;
 	}
+
 	section {
 		max-width: 100%;
 		margin-left: 0px;
@@ -30,10 +42,11 @@
 	}
 	aside {
 		margin: 0 auto;
-
 	}
+
 	.widgets-block {
 		height: auto;
+		background: #62352b;
 	}
  
 	.widgets-block .container {
@@ -42,11 +55,119 @@
 		
 	}
 	.widget {
-		max-width: 90%;
+		width: 300px;
 		margin: 0 auto;
+		margin-bottom: 30px;
 	}
 }
  
 @media screen and (min-width: 480px) and (max-width: 800px) {
+	.container {
+		width: 100%;
+	}
 
+	header {
+		width: 100%;
+	}
+	.header-block {
+		padding-right: ;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.logo {
+		margin-bottom: 10px;
+	}
+	.navigation-menu {
+		margin-right: 0;
+		
+	}
+	.navigation-menu a {
+					
+	}
+	.banner-block {
+		width: 100%;
+
+	}
+	.banner-image img{
+		width: 100%;
+		
+	}
+	.main-block .container {
+		padding-top: 0;
+	}
+
+	section {
+		max-width: 100%;
+		margin-left: 0px;
+		margin-bottom: 30px;
+	}
+	.post-image img {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.widgets-block {
+		height: auto;
+		background: #62352b;
+	
+	}
+ 
+	.widgets-block .container {
+		flex-direction: column;
+		height: auto;
+		
+	}
+	.widget {
+		width: 300px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+	.container {
+		width: 99%;
+	}
+	header {
+		width: 100%;
+	}
+	.logo {
+		margin-left: 20px;
+	}
+	
+	.navigation-menu a {
+		margin: 0 5px;
+	}
+	.banner-block {
+		width: 100%;
+
+	}
+	.banner-image img{
+		width: 100%;
+		
+	}
+	.main-block .container {
+		flex-wrap: nowrap;
+		padding-top: 0;
+	}
+	section {
+		width: calc(100% - 323px);
+		margin-left: 0px;
+
+	}
+	section h2 {
+		font-size: 2.1em;
+		letter-spacing: -1px;
+	}
+	.main-block {
+		width: 100%;
+		padding-right: 10px;
+	}
+	.post-image img {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	.widgets-block {
+		width: 100%;
+		padding-top: 25px;
+	 }
 }
