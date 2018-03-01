@@ -42,7 +42,7 @@ header {
 	width: 212px;
 	height: 100px;
 	/*background: url("../images/logo-bg.png") left top no-repeat;*/
-	background: #962121;
+	background: #A32424;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -72,7 +72,7 @@ header {
 
 .navigation-menu li a:hover,
 .navigation-menu li a.active {
-	background: rgb(136, 29, 29);
+	background: #881D1D;
 	border-radius: 5px;
 	box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 10px;
 }
